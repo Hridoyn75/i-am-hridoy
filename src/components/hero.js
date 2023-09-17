@@ -3,13 +3,11 @@ import { Syne } from "next/font/google";
 const syne = Syne({ subsets: ["latin"], weight: "600" });
 import { BsGithub, BsFacebook } from "react-icons/bs";
 import { ImMail4 } from "react-icons/im";
-import NavBar from "./nav";
 import Button from "./btn";
 
 const Hero = () => {
   return (
     <>
-      <NavBar />
       <main className=" h-screen md:h-[80vh] flex justify-center items-center">
         <div className=" flex flex-col-reverse md:flex-row justify-center items-center gap-5">
           <div className=" text-center">

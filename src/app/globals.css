@@ -99,12 +99,8 @@ body {
 .blog-card {
   background: #2e1830;
   border: 3px solid #940ba5;
-  min-height: 220px;
   border-radius: 8px;
   transition: all ease 0.4s;
-}
-.blog-card {
-  max-height: 220px;
 }
 .project-card:hover,
 .blog-card:hover {

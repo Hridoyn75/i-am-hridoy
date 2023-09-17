@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const BlogCard = () => {
   return (
-    <Link href="/">
-      <div className="blog-card flex justify-center items-center gap-3 p-3">
+    <Link href="/blogs/first-post">
+      <div className="blog-card flex flex-col md:flex-row justify-center items-center gap-3 p-3">
         <img
-          className=" w-1/3 max-h-[200px] rounded-md object-contain"
+          className=" w-full md:w-1/3 max-h-[200px] rounded-md object-contain"
           src="/project.png"
           alt="project"
         />

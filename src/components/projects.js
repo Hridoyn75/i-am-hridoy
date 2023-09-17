@@ -5,7 +5,7 @@ const syne = Syne({ subsets: ["latin"], weight: "600" });
 
 const Projects = () => {
   return (
-    <section id="projects" className=" min-h-screen md:min-h-[80vh]">
+    <section id="projects">
       <h2 className={` text-center text-4xl pt-5 ${syne.className}`}>
         <span className="gradient-text">#</span>Projects
       </h2>
