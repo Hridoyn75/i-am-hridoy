@@ -1,27 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #03060d;
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+
+
+/* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #940ba5 #03060d;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+      width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+      background: #03060d;
+  }
+
+  *::-webkit-scrollbar-thumb {
+      background-color: #940ba5;
+      border-radius: 8px;
+      border: 0px solid #ffffff;
+  }
+
+
+
+.special_btn {
+  background: #11163c;
+  padding: 12px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px 2px #940ba5;
+  transition: 0.2s;
+}
+.special_btn:hover {
+  box-shadow: 1px 0px 20px 6px #940ba5;
+}
+.different_bg {
+  background-color: #940ba5 !important;
+  box-shadow: 1px 1px 8px 2px #11163c;
+}
+.gradient-text {
+  background: linear-gradient(
+    120deg,
+    rgb(244, 90, 136) 7%,
+    rgb(40, 170, 240) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-border {
+  --border-width: 3px;
+  position: relative;
+  background: #222;
+  border-radius: 50%;
+  margin: 3px;
+}
+.gradient-border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    #5f86f2,
+    #a65ff2,
+    #f25fd0,
+    #f25f61,
+    #f2cb5f,
+    #abf25f,
+    #5ff281,
+    #5ff2f0
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.project-card,
+.blog-card {
+  background: #2e1830;
+  border: 3px solid #940ba5;
+  min-height: 220px;
+  border-radius: 8px;
+  transition: all ease 0.4s;
+}
+.blog-card {
+  max-height: 220px;
+}
+.project-card:hover,
+.blog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #940ba5;
 }
