@@ -1,31 +1,9 @@
 import { Syne } from "next/font/google";
+import { backend, frontend, others } from "@/fakeDB/skills";
 const syne = Syne({ subsets: ["latin"], weight: "600" });
 
 const Skills = () => {
-  const frontend = [
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "Tailwind CSS",
-    "JavaScript",
-    "React",
-    "NextJS",
-    // Add more skills as needed
-  ];
-  const backend = [
-    "Node.js",
-    "Express.js",
-    "SQL",
-    "MySQL",
-    "MongoDB",
-    // Add more skills as needed
-  ];
-  const others = [
-    "Extension Development",
-    "Comfortable with Canva",
-    "70+ WPM typing speed",
-    // Add more skills as needed
-  ];
+
 
   return (
     <section id="skills" className=" mb-10">

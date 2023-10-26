@@ -7,7 +7,7 @@ const BlogCard = () => {
       <div className="blog-card flex flex-col md:flex-row justify-center items-center gap-3 p-3">
         <img
           className=" w-full md:w-1/3 max-h-[200px] rounded-md object-contain"
-          src="/project.png"
+          src="/projects/1.png"
           alt="project"
         />
         <div>
