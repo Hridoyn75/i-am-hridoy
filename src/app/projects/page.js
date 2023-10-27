@@ -54,17 +54,18 @@ const ProjectsPage = () => {
               key={project.id}
               image={project.image}
               type={project.type}
+              title={project.title}
             />
           );
         })}
-        <div className=" w-fit mx-auto flex gap-8">
+        {/* <div className=" w-fit mx-auto flex gap-8">
           <button className=" px-4 special_btn different_bg py-2 rounded-md">
             Prev
           </button>
           <button className=" px-4 special_btn different_bg py-2 rounded-md">
             Next
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );
