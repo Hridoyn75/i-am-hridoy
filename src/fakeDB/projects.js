@@ -4,9 +4,9 @@ const projectsDB = [
     type: "web",
     title: "Online Learning Platform",
     image: "/projects/1.png",
-    description: "Project No 1 description",
-    live_url: "http://onlineiskool.vercel.app",
-    github_url: "http://github.com/hridoyn75/onlineiskool",
+    description:
+      "FreeAcademy provides a structured and distraction-free educational platform, embraced by a community of over 1200 students. I have used NextJS as frontend and NodeJS(Express) as backend. I choosed mysql as database, because this platform data best fit in tables. Additionally, I have incorporated necessary packages for enhanced functionality.",
+    live_url: "https://freeacademy.vercel.app/",
   },
   {
     id: 2,
@@ -29,42 +29,22 @@ const projectsDB = [
   {
     id: 4,
     type: "extension",
-    title: "Project No 4",
+    title: "Subs-Transfer",
     image: "/projects/4.png",
-    description: "Project No 4 description",
+    description: "Extensions: Subs-Transfer - Move YouTube Subscriptions",
     live_url:
       "https://microsoftedge.microsoft.com/addons/detail/substransfer-move-yout/nfleoiobaageallmedogkmdnagkfcflh",
-    github_url: "http://github.com/hridoyn75/onlineiskool",
-  },
-  {
-    id: 5,
-    type: "extension",
-    title: "Project No 5",
-    image: "/projects/5.png",
-    description: "Project No 5 description",
-    live_url:
-      "https://microsoftedge.microsoft.com/addons/detail/substransfer-move-yout/nfleoiobaageallmedogkmdnagkfcflh",
-    github_url: "http://github.com/hridoyn75/onlineiskool",
+    github_url: "https://github.com/Hridoyn75/Subs-Transfer",
   },
   {
     id: 6,
     type: "web",
-    title: "Project No 6",
+    title: "HridoyNews",
     image: "/projects/6.png",
-    description: "Project No 6 description",
+    description: "A simple news application, scraping news from jugantor.com",
     live_url:
-      "https://microsoftedge.microsoft.com/addons/detail/substransfer-move-yout/nfleoiobaageallmedogkmdnagkfcflh",
-    github_url: "http://github.com/hridoyn75/onlineiskool",
-  },
-  {
-    id: 7,
-    type: "npm package",
-    title: "Project No 7",
-    image: "/projects/7.png",
-    description: "Project No 7 description",
-    live_url:
-      "https://microsoftedge.microsoft.com/addons/detail/substransfer-move-yout/nfleoiobaageallmedogkmdnagkfcflh",
-    github_url: "http://github.com/hridoyn75/onlineiskool",
+      "https://hridoynews.vercel.app/",
+    github_url: "https://github.com/Hridoyn75/hridoynews",
   },
 ];
 
