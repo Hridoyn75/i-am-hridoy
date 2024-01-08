@@ -17,7 +17,7 @@ const Hero = () => {
             <p className={` mb-6 pt-2 text-xl`}>
               A self-taught full-stack web developer.
             </p>
-            <Button href='https://www.facebook.com/nazmulhridoy001' text='Contact Me' />
+            <Button href='https://drive.google.com/file/d/1p_bujlsebXVVzjxu9lzkT0iafD2UN3KG/view' text='Download CV' />
             <div className=" text-slate-500 mt-8 text-3xl flex justify-center gap-3">
               <a
                 className=" hover:text-white"
